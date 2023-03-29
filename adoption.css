@@ -1,1 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+#search-bar {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pet-input {
+    background: gray;
+    width: 450px;
+    height: 35px;
+    display: flex;
+}
+
+#pet-input input {
+    flex: 1;
+    /* border: none; */
+    outline: none;
+}
+
+#pet-input button {
+    background: teal;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.card-content {
+    background-color: transparent;
+    padding: 0.25rem;
+}
