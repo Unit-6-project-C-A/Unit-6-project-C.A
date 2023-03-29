@@ -1,23 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furever Friends</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+
 </head>
+
 <body>
-    <header></header>
-    <section id = "decription" >OUR MISSION</section>
-    <section id = "carousel"></section>
-    <div class="nav-bar">
-        <a href="#home" class="active">Logo</a>
-        <div id="Links">
-          <a href="#home">Home</a>
-          <a href="#Pets">Pets!</a>
+    <header id = "header">
+        <h1 class="title" id="title">Furever Friends</h1>
+
+        <div id="navbar">
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Adoption</a></li>
+                    <!-- <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li> -->
+                </ul>
+            </nav>
         </div>
-        
-      </div>
+    </header>
+
+    <section class="description">
+        <h1>OUR MISSION</h1>
+        <p>uheduwhdu</p>
+        <p>ubcfjevhjjhj</p>
+    </section>
+
+    <section>
+        <div id="slider">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img id = "pic"src="https://source.unsplash.com/random/1200x500" alt="" />
+                    </figure>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img id = "pic"src="https://source.unsplash.com/random/1200x500" alt="" />
+                    </figure>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img id = "pic" src="https://source.unsplash.com/random/1200x500" alt="" />
+                    </figure>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img id = "pic" src="https://source.unsplash.com/random/1200x500" alt="" />
+                    </figure>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img id = "pic"src="https://source.unsplash.com/random/1200x500" alt="" />
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#slider', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+        });
+    </script>
     <script src="index.css"></script>
 </body>
+
 </html>

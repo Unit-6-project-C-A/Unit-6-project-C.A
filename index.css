@@ -1,1 +1,111 @@
+body {
+    background-color: #d9cfc1;
+}
 
+#header {
+    background-color: #a1b1c1;
+    height: 280px;
+
+}
+
+#navbar {
+    margin-top: 90px;
+}
+
+.title,
+#title {
+    background-color: #a1b1c1;
+    height: 150px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 2.125;
+
+}
+
+.description {
+    background-color: #eee3ab;
+    height: 400px;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.slider-text {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+#slider .card-content {
+    max-width: 50%;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+    #slider .card-content {
+        display: none;
+    }
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.item-slide img {
+    max-width: 500px;
+}
+
+
+.caption-container {
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+.content {
+    padding: 16px;
+}
