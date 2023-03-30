@@ -3,28 +3,43 @@ body {
 }
 
 #header {
-    background-color: #a1b1c1;
-    height: 280px;
+    background-color: #b0cce8;
+    height: 210px;
 
 }
 
+p {
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #navbar {
-    margin-top: 90px;
+    margin-top: 30px;
+    font-family: cursive;
+}
+
+#slider {
+    height: 30%;
+    width: 30%
 }
 
 .title,
 #title {
-    background-color: #a1b1c1;
+    background-color: #b0cce8;
     height: 150px;
     font-size: 60px;
     text-align: center;
     line-height: 2.125;
+    font-family: cursive;
 
 }
 
 .description {
-    background-color: #eee3ab;
-    height: 400px;
+    background-color: #d9cfc1;
+    height: 900px;
+    width: 50%;
+    margin-left: 25%;
     text-align: center;
     font-size: 35px;
     margin-top: 20px;
@@ -43,6 +58,9 @@ body {
 
 #slider {
     overflow: hidden;
+    display: inline-flex;
+    height: 70%;
+    width: 60%;
 }
 
 @media screen and (max-width: 1023px) {
