@@ -39,3 +39,24 @@
     background-color: transparent;
     padding: 0.25rem;
 }
+
+.card .card-image,
+.card .card-image .image img {
+  height: 200px;
+}
+
+img {
+    object-fit: cover;
+}
+
+#fielding{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+#title {
+    padding: 50px;
+    font-family: cursive;
+    font-size: 49px;
+}
