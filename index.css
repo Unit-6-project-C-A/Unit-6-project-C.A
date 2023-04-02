@@ -3,9 +3,12 @@ body {
 }
 
 #header {
-    background-color: #b0cce8;
+    background-color: #BB7843;
     height: 210px;
 
+}
+h1{
+    font-weight: bold;
 }
 
 p {
@@ -13,10 +16,14 @@ p {
     padding-left: 20px;
     padding-right: 20px;
 }
+#foot{
+    background-color:#c6d673 ;
+    height: 50px;
+}
 
 #navbar {
     margin-top: 30px;
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 #slider {
@@ -26,13 +33,13 @@ p {
 
 .title,
 #title {
-    background-color: #b0cce8;
+    background-color: #BB7843;
     height: 150px;
     font-size: 60px;
     text-align: center;
     line-height: 2.125;
-    font-family: cursive;
-
+    /* font-family: cursive; */
+    color: #faebd7
 }
 
 .description {

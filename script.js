@@ -1,3 +1,48 @@
+//--DOM ELEMENTS--//
+const dogImage = document.getElementById("pic1")
+const catImage = document.getElementById("pic2")
+// const petImage = document.getElementById("pic1")
+// const petImage = document.getElementById("pic1")
+// const petImage = document.getElementById("pic1")
+//--FETCH FUNCTIONS--//
+const fetchFrom = async (url) => {
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  }
+  catch (error) {
+    console.log(error);
+    return null;
+  }
+}
+//--DOG FETCH--//
+const getDogImg = async () => {
+  const url = "https://dog.ceo/api/breeds/image/random";
+
+  const data = await fetchFrom(url);
+  if (data !== null) {
+    // do stuff with the data!
+    console.log(data)
+    const dogSrc = data.message
+    dogImage.src = dogSrc
+    console.log(data.message);
+  }
+}
+getDogImg()
+//--CAT FETCH--//
+const getCatImg = async () => {
+  const url = "https://api.thecatapi.com/v1/images/search";
+
+  const data = await fetchFrom(url);
+  if (data !== null) {
+    // do stuff with the data!
+    console.log(data)
+    const catSrc = data[0].url
+    catImage.src = catSrc
+    console.log(data[0].url);
+  }
+}
+getCatImg()
 
 //--FUNCTION FOR CAROUSEL--//
 var slideIndex = 1;
@@ -14,7 +59,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("item-slide");
-  var captionText = document.getElementById("caption");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
