@@ -13,6 +13,7 @@ const buttons = document.getElementsByClassName('know-more');
 
 /* Helper Functions */
 
+document.addEventListener("DOMContentLoaded", function(event) { 
 // Generic fetchFrom Helper Function 
 const fetchFrom = async (url, options) => {
 	try {
@@ -153,6 +154,7 @@ const knowMore = async () => {
 	}
 }
 knowMore();
+});
 
 /* Test Function Archive */
 
