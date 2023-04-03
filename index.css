@@ -1,13 +1,20 @@
 body {
     background-color: #d9cfc1;
+    height: 100%;
 }
-
+#navbar {
+    margin-top: 30px;
+    
+}
 #header {
     background-color: #BB7843;
     height: 210px;
 
 }
-h1{
+#om{
+    font-weight: bold;
+}
+#wa{
     font-weight: bold;
 }
 
@@ -28,11 +35,8 @@ h1{
     background-color:#c6d673 ;
     height: 50px;
     margin-top: 100px;
-}
-
-#navbar {
-    margin-top: 30px;
-    
+    text-align: center;
+    font-weight: bold;
 }
 #slider {
     height: 30%;
@@ -54,7 +58,7 @@ h1{
     width: 50%;
     margin-left: 25%;
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     margin-top: 20px;
     padding-top: 20px;
 }
@@ -113,11 +117,6 @@ h1{
     right: 0;
     top: 0;
 }
-
-p {
-    font-size: 20px;
-}
-
 .item-slide img {
     max-width: 500px;
 }
@@ -143,6 +142,4 @@ p {
 #link{
     color: antiquewhite;
 }
-#link :hover{
-    color:black;
-}
+
