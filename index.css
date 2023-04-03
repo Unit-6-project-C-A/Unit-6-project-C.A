@@ -11,26 +11,33 @@ h1{
     font-weight: bold;
 }
 
-p {
-    padding-bottom: 60px;
+#para1 {
+    padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 10px;
 }
+#para2 {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin-top: 10px; */
+}
+
 #foot{
     background-color:#c6d673 ;
     height: 50px;
+    margin-top: 100px;
 }
 
 #navbar {
     margin-top: 30px;
-    /* font-family: cursive; */
+    
 }
-
 #slider {
     height: 30%;
     width: 30%
 }
-
 .title,
 #title {
     background-color: #BB7843;
@@ -38,7 +45,6 @@ p {
     font-size: 60px;
     text-align: center;
     line-height: 2.125;
-    /* font-family: cursive; */
     color: #faebd7
 }
 
@@ -133,4 +139,10 @@ p {
 
 .content {
     padding: 16px;
+}
+#link{
+    color: antiquewhite;
+}
+#link :hover{
+    color:black;
 }

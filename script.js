@@ -1,9 +1,6 @@
 //--DOM ELEMENTS--//
 const dogImage = document.getElementById("pic1")
 const catImage = document.getElementById("pic2")
-// const petImage = document.getElementById("pic1")
-// const petImage = document.getElementById("pic1")
-// const petImage = document.getElementById("pic1")
 //--FETCH FUNCTIONS--//
 const fetchFrom = async (url) => {
   try {
