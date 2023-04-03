@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+#header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
 #titlecard {
     display: flex;
     justify-content: center;
@@ -64,4 +71,5 @@ img {
     padding: 50px;
     font-family: cursive;
     font-size: 49px;
+    
 }

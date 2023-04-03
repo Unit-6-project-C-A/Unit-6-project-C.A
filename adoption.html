@@ -3,475 +3,406 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
     <title>Adopt a Furever Friend!</title>
-    <script src="adoption_config.js" defer></script>
-    <script src="adoption.js" defer></script>
+    <script defer src="adoption_config.js">
+    </script>
+    <script defer src="adoption.js">
+    </script>
 </head>
 
-<body>
-    <header>
-        <p>Testing Text</p>
+<body style="background-color: #F7D1CE;">
+    <header id="header" style="background-color: #bb7843;">
+        <h1 class="title" id="title" style="text-align: center; color: antiquewhite; font-size: 60px; line-height: 2.125;">Furever Friends</h1>
+        <div id="navbar">
+            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+                <ul>
+                    <li><a id="link" href="index.html" style="color: antiquewhite;">Home</a></li>
+                    <li><a id="link" href="index.html#.description" style="color: antiquewhite;">Our Mission</a></li>
+                    <li><a id="link" href="adoption.html" style="color: antiquewhite;">Adoption</a></li>
+                    <!-- <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li> -->
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+    <main style="background-color: #EBE19C;">
         <div id="titlecard" style="display: flex; justify-content: center;">
-            <p id="title" style="font-family: cursive;font-size: 49px;padding: 50px;">Adopt <span id="1" style="color: burlywood;">a</span> <span id="2" style="color: firebrick">Furever</span> <span id="3" style="color:darkolivegreen">Friend!</span></p>
+            <p id="title2" style="font-size: 49px;padding: 50px;">Adopt a <span style="font-weight: bold; color: #BB7843;">Furever Friend!</span></p>
         </div>
-        <div id="fielding" class="field is-grouped">
-            <p class="control is-expanded">
-                <input class="input" type="text" placeholder="What type of Furever Friend are you looking for?">
-            </p>
-            <p class="control">
-                <button class="button is-info" onclick="search()">Search</button>
-            </p>
-        </div>
-        <br>
+        <!-- <div class="field is-grouped" id="fielding">
+			<p class="control is-expanded"><input class="input" id="filter" placeholder="What type of Furever Friend are you looking for?" type="text"></p>
+			<p class="control"><button class="button is-info" id="filtering">Search</button></p>
+		</div><br> -->
         <div class="columns" style="margin: 20px">
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
         </div>
         <div class="columns" style="margin: 20px">
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
         </div>
         <div class="columns" style="margin: 20px">
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
         </div>
         <div class="columns" style="margin: 20px">
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
         </div>
         <div class="columns" style="margin: 20px">
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
             <div style="padding: 7px;"></div>
-            <div class="card column is-one-fourth">
+            <div class="card column is-one-fourth content-holder">
                 <div class="card-image has-text-centered">
                     <figure class="image is-300x300 is-inline-block img-holder">
                         <img class="animal-img" src="https://dummyimage.com/300.png/09f/fff">
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div id="pet-details" class="content">
-                        Name(s):
-                        <br>
-                        Gender:
-                        <br>
-                        Species:
-                        <br>
-                        Breed:
-                        <br>
+                    <div class="content" id="pet-details">
+                        Name(s):<br>
+                        Gender:<br>
+                        Species:<br>
+                        Breed:<br>
                         Size:
-                    </div>
-                    <a class="button is-link is-light is-small know-more" target="_blank" rel="noopener noreferrer">Want to know more? Click Here!</a>
+                    </div><a class="button is-link is-light is-small know-more" rel="noopener noreferrer"
+                        target="_blank">Want to know more? Click Here!</a>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <p id ="foot" style="text-align: center; font-weight: bold;">Copyright @2023</p>
+    </footer>
 </body>
+</html>
